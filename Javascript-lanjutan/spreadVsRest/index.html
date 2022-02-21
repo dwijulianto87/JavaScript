@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread VS Rest</title>
+
+    <style>
+        h1{ 
+            text-align: center; 
+            }
+            
+        article{
+            padding: 30px;
+            border: 1px solid black;
+        }
+        .container{ 
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center; 
+            width: 600px;
+            margin: 50px auto; 
+            padding: 30px;
+            border: 2px solid black;
+            }
+
+            .angka span{
+                font-size: 60px;
+                color: blueviolet;
+                transition: .3s;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .angka span:hover{
+                transform: scale(2) translateY(-10px);
+            }
+
+    </style>
+
+</head>
+
+
+<body>
+    <h1>Spread operator dan Rest parameter</h1>
+    <article>
+        <h2>Spread operator ( ... )</h2>
+        <P>Spread operator adalah memecah (expand/ unpack) iterables menjadi single element</P>
+        <h3>object - object yang iterable :</h3>
+        <ul>
+            <li class="item">String</li>
+            <li class="item">Array</li>
+            <li class="item">Arguments/ NodeList</li>
+            <li class="item">TypedArray</li>
+            <li class="item">Map</li>
+            <li class="item">Set</li>
+            <li class="item">User-defined Iterable</li>
+        </ul>
+
+        <h2>Rest parameter (...arg)</h2>
+        <P>Rest parameter adalah merepresentasikan argument pada function dengan jumlah yang tidak terbatas menjadi sebuah array</P>
+        <p>Rest parameter hanya bisa diakhir argument</p>
+    </article>
+    <div class="container"> 
+        <h2 class="angka">1234567890</h2>
+    </div>
+<script src="spreadRest.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+
+# Tipe data :
+
+1. number(64 bit) adalah tipe data angka
+
+   > jangan mulai dengan angka 0 (dianggap sebagai bilangan hexadesimal)
+
+   > angka tanpa desimal (10, 1500, 123456)
+     akurat sampai 15 digit
+
+   > angka dengan desimal (3.14, 0.5, 100.00)
+
+   > eksponen (123e5 // 12300000, 123e-5 // 0.00123)
+
+   > angka dengan desimal (3.14, 0.5, 100.00)
+
+   > angka special
+     @ infinity // 2/0
+     @ -infinity // -2/0
+     @ NaN(not a number) // 0/0, 100/ "10"
+
+2. string adalah tipe data untuk merepresentasikan data tekstual("", '')
+   "Dwi julianto"
+
+   > .length 
+     "dwi julianto".length
+     12
+   
+   > concatination (+)
+     "dwi" + " julianto" = "dwi julianto" 
+
+   > escape character :
+     a. \0 (karakter null)
+     b. \' (')
+     c. \\ (\)
+     d. \n (baris baru)
+     e. \t (tab)
+     f. \b (backspace)
+     g. \uXXXX (unicode)
+
+
+
+3. boolean adalah tipe data yang hanya dapat memiliki dua nilai, yakni true atau false. Tipe data ini menjadi kunci utama dalam penentuan logika
+   let x = true;
+
+4. object
+
+5. function
+
+6. undifined adalah Tipe data yang terbentuk ketika sebuah variabel tidak memiliki nilai, dalam arti lain ketika kita mendeklarasikan variabel tanpa menginisialisasikan nilainya, maka variabel tersebut menjadi undefined. 
+
+   let x;
+   console.log(typeof(x));
+
+/* output: undefined */
+
+
+7. null adalah Serupa dengan undefined, namun null perlu diinisialisasikan pada variabel. null biasa digunakan sebagai nilai sementara pada variabel
+   let x = null;
+
+

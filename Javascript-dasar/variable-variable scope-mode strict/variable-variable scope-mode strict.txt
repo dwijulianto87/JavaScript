@@ -1,0 +1,116 @@
+
+
+1. Variable 
+
+
+Variable adalah sebuah tempat/wadah yang memiliki nama, yang digunakan untuk menyimpan nilai
+
+a. dimulai dengan huruf kecil
+b. bila lebih dari 1 kata, kata pertama dimulai dengan huruf kecil, kata selanjutnya dimulai dengan huruf besar
+
+
+keyword deklarasi variable
+
+1. var -> nilainya bisa berubah-ubah
+2. let -> nilainya bisa berubah-ubah
+3. const -> nilainya tetap
+
+
+cara membuat varible :
+
+1. deklarasi -> mendaftarkan variable kelingkup yang sesuai
+
+2. inisialisai -> menyediakan memori untuk variable
+
+3. assignment -> menetapkan nilai yang spesifik kedalam variable
+
+
+contoh : 
+
+	var x; // deklarasi & inisiasi
+	x = 5; // asignment variable x dengan tipe data number(5)
+
+	let myName = "Dwi"; // deklarasi, inisiasi & asignment variable myName dengan tipe data string("Dwi")
+
+
+2. Variable scope
+
+a. globally scoped
+Variabel yang dapat di akses dari seluruh script disebut dengan “globally scoped,” 
+
+b. locally scoped
+Variabel yang hanya dapat diakses hanya pada function tertentu disebut dengan “locally scoped.”
+
+Variabel JavaScript menggunakan fungsi untuk mengelola cakupannya, Jika variabel didefinisikan di luar fungsi, maka variabel akan bersifat global. Jika variabel didefinisikan di dalam fungsi, maka variabel bersifat lokal dan cakupannya hanya pada fungsi tersebut atau turunannya.
+
+#  berikut variabel yang dapat diakses dalam sebuah fungsi:
+> Variabel argumen dari fungsinya.
+> Lokal variabel yang didefinisikan pada fungsinya.
+> Variabel dari induk fungsinya.
+> Global variabel.
+
+
+contoh :
+
+// global variable, dapat diakses pada parent() dan child()
+const a = 'a'; 
+ 
+function parent() {
+    // local variable, dapat diakses pada parent() dan child(), tetapi tidak dapat diakses diluar dari fungsi tersebut.
+    const b = 'b'; 
+    
+    function child() {
+        // local varible, dapat diakses hanya pada fungsi child().
+        const c = 'c';
+    }
+}
+
+
+-> Perlu kita perhatikan bahwa, ketika kita lupa menuliskan keyword let, const atau var pada script ketika membuat sebuah variabel, maka variabel tersebut akan menjadi global.
+
+
+3. Apa itu mode Strict
+Mode Strict adalah mode yang memaksakan penulisan program JavaScript yang baik dan aman. Hal ini memastikan tidak terjadinya kegagalan dalam menjalankan kode akibat penulisan script yang buruk, dan juga mencegah timbulnya bug. 
+
+Berikut beberapa hal yang tidak dapat dilakukan jika menggunakan mode Strict:
+
+1. Menggunakan variabel sebelum mendeklarasikannya. 
+2. Menghapus variabel, function dan argumen.
+3. Menggunakan definisi object property yang berulang.
+4. Menggunakan definisi parameter pada function yang berulang.
+5. Menulis pada property jenis readonly.
+6. Menggunakan angka dengan penulisan oktal.
+7. Menulis pada property jenis get.
+8. Menghapus undelete property seperti pada property jenis prototype.
+9. Menggunakan string “eval” dan “argument” sebagai variabel.
+10. Menggunakan statement jenis with.
+11. Menggunakan future keyword reserve seperti implements, interface, package, private, protected, public, static, yield.
+
+
+-> Cara aktivasi mode Strict
+Jalankan mode Strict dengan cara menuliskan perintah “use strict” pada awal sebuah script atau function. Perintah ditulis dalam bentuk tulisan biasa dan bukan merupakan statemen. Jika perintah ditulis di awal sebuah script maka akan berlaku untuk secara global. Jika ditulis di dalam function maka tidak akan berlaku secara global.
+
+Contoh penggunaan mode Strict secara global (ditulis di awal script)
+
+"use strict";
+x = 9;       // ini akan dianggap error karena variabel belum dideklarasikan
+showAngka();   // ini akan dianggap error karena function belum dideklarasikan
+ 
+function showAngka() {
+  var x = 9;
+  alert(x);
+}
+
+
+
+Contoh penggunaan mode Strict di dalam function 
+
+x = 9;       // ini tidak dianggap error karena tidak kena mode Strict
+showAngka();   // ini tidak dianggap error karena tidak kena mode Strict
+ 
+function showAngka() {
+  “use strict”;
+   x = 9; // ini akan dianggap error karena variabel belum dideklarasikan
+  alert(x);
+}
+

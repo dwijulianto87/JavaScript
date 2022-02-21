@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> for..of VS for..in</title>
+
+    <style>
+        h1{ 
+            text-align: center; 
+            }
+            
+        article{
+            padding: 30px;
+            border: 1px solid black;
+        }
+        .container{ 
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: left; 
+            width: 600px;
+            margin: 50px auto; 
+            padding: 30px;
+            border: 2px solid black;
+            }
+            .hl{ background-color: yellow; }
+    </style>
+
+</head>
+
+
+<body>
+    <h1> for..of VS for..in</h1>
+    <article>
+        <h2>For..of</h2>
+        <P>creates a loop iterating over iterable object</P>
+        <P>for..of adalah sebuah looping yang bisa mengulang atau menelusuri object - object yang iterable</P>
+        <h3>object - object yang iterable :</h3>
+        <ul>
+            <li class="item">String</li>
+            <li class="item">Array</li>
+            <li class="item">Arguments/ NodeList</li>
+            <li class="item">TypedArray</li>
+            <li class="item">Map</li>
+            <li class="item">Set</li>
+            <li class="item">User-defined Iterable</li>
+        </ul>
+
+        <h2>For..in</h2>
+        <P>creates a loop only iterating over enumerable</P>
+        <p>For..in adalah sebuah looping yang bisa mengulang atau menelusuri hanya untuk enumerable (properti pada object</p>
+        
+    </article>
+    <div class="container"></div>
+<script src="forOf.js"></script>
+</body>
+</html>

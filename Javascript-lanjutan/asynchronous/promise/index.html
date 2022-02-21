@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+
+    <style>
+        h1{ 
+            text-align: center; 
+            }
+            
+        article{
+            padding: 30px;
+            border: 1px solid black;
+        }
+        .container{ 
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: left; 
+            width: 600px;
+            margin: 50px auto; 
+            padding: 30px;
+            border: 2px solid black;
+            }
+
+            .hl { background-color: yellow; 
+            }
+
+            .tebal {
+                font-size: 20px;
+                font-style: italic;
+                font-weight: bold;
+            }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <h1>Promise</h1>
+    <article>
+        <P><strong>Promise</strong> ( janji ) merupakan object yang merepresentasikan keberhasilan atau kegagalan sebuah event yang asynchronous di masa yang akan datang</P>
+        <p><strong>States</strong> => terpenuhi (fulfilled) / ingkar (rejected) / pending </p>
+        <p><strong>callback</strong> => resolve / reject / finally </p>
+        <p><strong>Aksi</strong> => then (terpenuhi) menjalankan resolve / catch (ingkar) menjalankan reject </p>
+    </article>
+    <div class="container"></div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    
+<script src="promise.js"></script>
+</body>
+</html>

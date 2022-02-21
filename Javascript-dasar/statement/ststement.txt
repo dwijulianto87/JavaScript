@@ -1,0 +1,10 @@
+
+
+Statement
+Sebuah script dibangun dari serangkaian statement. Statement merupakan sebuah perintah yang bertujuan untuk memberitahu apa yang harus dilakukan browser. Contohnya kode berikut merupakan statement yang menyatakan bahwa browser harus menampilkan pesan (alert) dengan kalimat “Terima kasih”.
+
+contoh :
+alert("Terimakasih.");
+
+
+Pada akhir kode terdapat tanda titik koma (;) yang digunakan untuk menandai akhir dari sebuah statement. Meskipun sebenarnya pada JavaScript kita dapat menghiraukan penulisan titik koma (;) pada akhir statement, tetapi dalam best practice nya kita biasakan akhiri statement dengan titik koma (;).

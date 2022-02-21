@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+
+    <style>
+
+        h1{ 
+            text-align: center; 
+            }
+            
+        article{
+            padding: 30px;
+            border: 1px solid black;
+        }
+        .container{ 
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: left; 
+            width: 600px;
+            margin: 50px auto; 
+            padding: 30px;
+            border: 2px solid black;
+            }
+
+            .hl { background-color: yellow; 
+            }
+
+            .tebal {
+                font-size: 20px;
+                font-style: italic;
+                font-weight: bold;
+            }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <h1>Fetch</h1>
+    <article>
+        <P>Fetch adalah sebuah method pada API javascript modern yang tugasnya mengambil data(resources) dari jaringan, dan mengembalikan promise yang selesai(fullfilled) ketika ada respon yang tersedia secara asynchronous atau ajax (XMLHttpRequest)</P>
+        <p>fetch(resources, init);</p>
+        <ul>
+            <h2>resources</h2>
+            <li><strong>Url</strong> alamat dari sumber yang kita akan ambil</li>
+            <li><strong>Request Object </strong> representasi sumber</li>
+        </ul>
+        <ul>
+            <h2>init (optional)</h2>
+            <p>konfigurasi tambahan pada sebuah request berbentuk object</p>
+            <li>method</li>
+            <li>headers</li>
+            <li>body</li>
+            <li>mode</li>
+            <li>cache</li>
+            <li>referrer</li>
+            <li>referrerPolicy</li>
+            <li>integrity</li>
+            <li>keepalive</li>
+            <li>signal</li>
+        </ul>
+            
+        <h2>Response</h2>
+        <p>hasil dari fetch berupa promise</p>
+        
+        <ul>
+            <h3>Response (property)</h3>
+
+            <li>headers</li>
+            <li>body</li>
+            <li>ok</li>
+            <li>rederected</li>
+            <li>status</li>
+            <li>statusText</li>
+            <li>type</li>
+            <li>url</li>
+        </ul>
+
+        <ul>
+            <h3>Response (method)</h3>
+
+            <li>clone()</li>
+            <li>erro()</li>
+            <li>redirect()</li>
+            <li>blob</li>
+            <li>formData()</li>
+            <li>json()</li>
+            <li>text()</li>
+        </ul>
+    </article>
+    <div class="container"></div>
+
+</body>
+</html>
